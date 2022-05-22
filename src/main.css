@@ -1,0 +1,354 @@
+body{
+    font-family: "Proxima Vara", Arial, Helvetica, sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 64px;
+    font-size: 14px;
+    /* padding-top: 0.7em; */
+    background-color:white;
+    box-shadow: 0 0 1px rgb(0, 0, 0,0.5);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    /* border: solid 1px white; */
+}
+footer .flex{
+    flex-wrap: wrap;
+}
+.grid{
+    display: grid;
+    width: 100%;
+    place-items: center;
+    /* border: solid 1px white; */
+}
+
+.navLink{
+    text-decoration: none;
+    color: #0a1121;
+}
+
+.navbarPart1 .navLink{
+    padding-left: 0.5em;
+}
+.navbar{
+    display:flex;
+    height: 100%;
+    max-width: 100vw;
+    align-items: center;
+    max-width: 2110px;
+}
+.forMobile{
+    display: none;
+}
+.brandLogo{
+    max-height: 100%;
+    padding: 0.5em;
+    padding-top: 1em;
+    padding-left: 2em;
+    box-sizing: border-box;
+    display: none;
+}
+
+
+.navbarPart1{
+    display: flex;
+    /* border: solid 1px black; */
+    width: 75%;
+    height: 100%;
+    align-items: center;
+    /* margin-left: 11.5em; */
+    margin-left: 12.5vw;
+}
+
+.navbarPart2{
+    display: flex;
+    /* border: solid 1px black; */
+    width: 25%;
+    height: 100%;
+    justify-content: end;
+    align-items: center;
+}
+.navbarPart2 a{
+    margin: 0px 8px;
+}
+
+
+.navItem{
+    text-decoration: none;
+    /* border: solid 1px black; */
+    height: 100%;
+    padding: 16px;
+    padding-top: 1.4em;
+    /* max-height: 64px; */
+    color: #0a1121;
+    box-sizing: border-box;
+}
+
+.navItem .imgSize{
+    height: 19px;
+}
+
+.navItem:hover{
+    background-color: rgb(243, 244, 245);
+    cursor: pointer;
+}
+
+.flightsAndPackagesImageSizeBooster{
+    height: 26px;
+}
+
+.active{
+    color: rgb(0, 124, 194);
+    border-bottom: solid 2px rgb(0, 124, 194);
+    font-weight: 600;
+}
+.active a{
+    color: rgb(0, 124, 194);
+    cursor: context-menu;
+}
+.active:hover{
+    background-color: white;
+    cursor: context-menu;
+}
+
+
+
+
+/* Main stuff here */
+
+main{
+    margin-top: 7em;
+}
+
+.container{
+    /* margin-left: 9em; */
+    margin-left: 11vw;
+}
+
+.mainBanner{
+    display: flex;
+    align-items: center;
+    /* border: solid 10px black; */
+    /* max-width: 75%; */
+    width: 75%;
+}
+.mainBanner img{
+    object-fit: cover;
+    width: 180px;
+    height: 100%;   
+}
+.mainBanner h1{
+    font-size: 24px;
+}
+
+.mainBannerText{
+    padding-left: 1em;
+    margin-left: 1em;
+    border-left: solid 1px rgba(0, 0, 0,0.1);
+}
+
+.searchArea{
+    background-color: #F9FAFA;
+    padding: 3em 0em;
+    margin-top: 2em;
+}
+.searchArea .tabs{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(231, 244, 250);
+    padding: 9px 16px;
+    border-radius: 1em 1em 0em 0em;
+}
+.searchArea .activeTab{
+    background-color: white;
+    color: rgb(0, 124, 194);
+    font-weight: 700;
+    /* box-shadow: -1px 0px 8px rgba(0, 0, 0, 0.3); */
+
+    border-bottom: 0px;
+}
+/* .searchForm{
+    display: block;
+    margin-bottom: 7em;
+    background-color: white;
+    border-radius: 0em 1em 1em 1em;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+} */
+.searchForm img{
+    box-sizing: border-box;
+}
+
+.searchBar{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 0em 1em 1em 1em;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.3);
+
+
+    border-top: 0px;
+    /* border: solid 3px black; */
+    margin-top: 9px;
+    /* height: 62px; */
+    /* width: 100vw; */
+    max-width: 85%;
+    max-width: 930px;
+    align-items: center;
+}
+.textArea{
+    display: flex;
+    /* border: solid 1px black; */
+    border-right: solid 1px rgba(0, 0, 0, 0.3);
+    align-items: center;
+}
+.searchBox{
+    height: 44px;
+    border: none;
+    margin-left: 0.5em;
+    padding-left: 2.5em;
+
+}
+.textArea img{
+    height: 35px;
+    opacity: 50%;
+    padding: 0.5em;
+    margin-left: 0.5em;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+}
+.checkIn img{
+    height: 50px;
+    margin-left: 1em;
+    /* border: solid 1px black; */
+    border-right: solid 1px rgba(0, 0, 0, 0.3);
+}
+
+.rooms img{
+    height: 48px;
+    margin-left: 1em;
+}
+.searchButton{
+    background-color: rgb(0, 124, 194);
+    padding: 1em  2em;
+    text-decoration: none;
+    color: white;
+    border-radius: 1em;
+    
+}
+
+.hotelSites{
+    /* border: solid 1px black; */
+    max-width: 85%;
+}
+
+
+.bold{
+    font-weight: 700;
+}
+
+
+/* footer here */
+
+footer{
+    background-color: rgb(10, 17, 33);
+    font-size: 14px;
+    margin-top: 5em;
+    color: white;
+    padding-bottom: 2em;
+    
+    /* position: relative; */
+    bottom: 0;
+    
+    width: 100%;
+    /* max-width:100%; */
+}
+footer .container{
+    margin-left: 0em;
+    padding: 5em 5em;
+    /* padding-left: em; */
+  
+    box-sizing: border-box;
+    /* border-bottom: solid 1px white; */
+}
+footer .forHr{
+    padding-bottom: 3em;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+}
+footer .copyright{
+    text-align: center;
+    font-size: 0.8em;
+    opacity: 50%;
+    margin-bottom: 2em;
+}
+p{
+    width: 100%;
+    /* border: solid 1px white; */
+}
+.form{
+    width: 100%;
+    justify-content: end;
+}
+
+.form a{
+    background-color: rgb(108, 112, 122);
+    padding: 0.7em;
+    height: 44px;
+    box-sizing: border-box;
+    padding-top: 0.95em;
+}
+.email{
+    border-radius: 1em;
+    width: 40%;
+    border: none;
+    height: 44px;
+    padding-left: 1em;
+    margin-right: 1em;
+}
+.newsLetter{
+ 
+}
+
+@media only screen and (max-width: 768px) {
+    .forPcOnly{
+        display:none
+    }    
+    .forMobile{
+        display: block;
+    }
+    .container{
+        margin-left: 2vw;
+    }
+    .navbar{
+        height: 3.5rem;
+        width: 100vw;
+        /* max-width: 100%; */
+    }
+    .mainBannerText{
+        border-left:none;
+    }
+    .checkIn img{
+        width: 95%;
+        border-right: none;
+    }
+    .textArea{
+        border-right: none;
+    }
+    .rooms{
+        width: 55%;
+    }
+    .searchBar a{
+        margin: 0.2em;
+        padding: 0.7em 1.5em;
+    }
+    footer .container{
+        padding: 5em 3.5em;
+    }
+}
